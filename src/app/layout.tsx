@@ -10,7 +10,7 @@ const Sofia = Sofia_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Create Next App",
+  title: "Welcome to my Dapp",
   description: "This site was created using the NextJS framework 🚀",
 };
 

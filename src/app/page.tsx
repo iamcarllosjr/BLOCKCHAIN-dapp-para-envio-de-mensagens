@@ -1,8 +1,17 @@
-export default function HomePage() {
+"use client";
+import { useState } from "react";
+
+import { Header, Memos, SendMessages } from "../app/components";
+
+export default function Home() {
+  const [accounts, setAccounts] = useState("");
+
   return (
-    <div className="flex min-h-screen justify-center bg-zinc-800">
-      <div>
-        <h1 className="mt-10 text-6xl text-white">Hello NextJs !</h1>
+    <div className="h-full bg-zinc-800">
+      <Header accounts={accounts} setAccounts={setAccounts} />
+      <div className="flex h-full flex-col pt-20">
+        <SendMessages accounts={accounts} />
+        <Memos accounts={accounts} />
       </div>
     </div>
   );
