@@ -1,7 +1,6 @@
 import "./global.css";
 import { Metadata } from "next";
 import { Sofia_Sans } from "next/font/google";
-import { ReactNode } from "react";
 
 const Sofia = Sofia_Sans({
   subsets: ["latin"],
@@ -14,7 +13,11 @@ export const metadata: Metadata = {
   description: "This site was created using the NextJS framework 🚀",
 };
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <body className={Sofia.className}>{children}</body>
