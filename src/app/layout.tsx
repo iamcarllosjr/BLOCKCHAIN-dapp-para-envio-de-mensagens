@@ -1,8 +1,8 @@
-import { LayoutProps } from ".next/types/app/layout";
-
 import "./global.css";
 import { Metadata } from "next";
 import { Sofia_Sans } from "next/font/google";
+
+import { LayoutProps } from "../../.next/types/app/index";
 
 const Sofia = Sofia_Sans({
   subsets: ["latin"],
