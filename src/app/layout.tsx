@@ -14,11 +14,7 @@ export const metadata: Metadata = {
   description: "This site was created using the NextJS framework 🚀",
 };
 
-interface RootLayoutProps {
-  children: ReactNode;
-}
-
-export default function RootLayout({ children }: RootLayoutProps) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body className={Sofia.className}>{children}</body>
