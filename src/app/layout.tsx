@@ -1,3 +1,5 @@
+import { LayoutProps } from ".next/types/app/layout";
+
 import "./global.css";
 import { Metadata } from "next";
 import { Sofia_Sans } from "next/font/google";
@@ -13,11 +15,7 @@ export const metadata: Metadata = {
   description: "This site was created using the NextJS framework 🚀",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en">
       <body className={Sofia.className}>{children}</body>
